@@ -27,7 +27,7 @@ A powerful web application that converts various file types (Figma, PNG, JPEG, P
 ![Main Interface](screenshots/ui1.png)
 
 ### File Processing View
-
+![File Processing](screenshots/ui2.png)
 
 ## How to Use
 
