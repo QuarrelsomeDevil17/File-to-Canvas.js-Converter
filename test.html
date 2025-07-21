@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - File to Canvas.js Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .test-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 10px 10px 0;
+            transition: transform 0.2s;
+        }
+        .test-link:hover {
+            transform: translateY(-2px);
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            background: #e8f4f8;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+        .status {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .status.ready {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.testing {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .instructions {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🧪 File to Canvas.js Converter - Test Suite</h1>
+        <p>Use these links to test different aspects of the application:</p>
+        
+        <a href="index.html" class="test-link">🎨 Main Application</a>
+        <a href="example.html" class="test-link">📋 Code Example</a>
+    </div>
+    
+    <div class="test-container">
+        <h2>📋 Test Checklist</h2>
+        <ul class="feature-list">
+            <li><span class="status ready">READY</span> File upload functionality (drag & drop)</li>
+            <li><span class="status ready">READY</span> PNG/JPEG image processing</li>
+            <li><span class="status ready">READY</span> PDF file processing</li>
+            <li><span class="status ready">READY</span> Canvas.js code generation</li>
+            <li><span class="status ready">READY</span> Code copying to clipboard</li>
+            <li><span class="status ready">READY</span> Canvas image download</li>
+            <li><span class="status ready">READY</span> Responsive design</li>
+            <li><span class="status testing">TESTING</span> Figma file support (limited)</li>
+        </ul>
+    </div>
+    
+    <div class="test-container">
+        <h2>🔍 Manual Testing Instructions</h2>
+        <div class="instructions">
+            <h3>1. File Upload Test</h3>
+            <ul>
+                <li>Try uploading a PNG image</li>
+                <li>Try uploading a JPEG image</li>
+                <li>Try uploading a PDF file</li>
+                <li>Test drag and drop functionality</li>
+                <li>Verify file info is displayed correctly</li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <h3>2. Canvas Functionality Test</h3>
+            <ul>
+                <li>Verify canvas displays uploaded content</li>
+                <li>Check that content is properly scaled</li>
+                <li>Test object selection and movement</li>
+                <li>Try the reset button</li>
+                <li>Test canvas download functionality</li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <h3>3. Code Generation Test</h3>
+            <ul>
+                <li>Verify Canvas.js code is generated</li>
+                <li>Test copy to clipboard functionality</li>
+                <li>Check that generated code is valid</li>
+                <li>Test the code in the example page</li>
+            </ul>
+        </div>
+        
+        <div class="instructions">
+            <h3>4. Responsive Design Test</h3>
+            <ul>
+                <li>Test on different screen sizes</li>
+                <li>Check mobile responsiveness</li>
+                <li>Verify all buttons work on touch devices</li>
+                <li>Test drag and drop on mobile</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="test-container">
+        <h2>🔧 Developer Testing</h2>
+        <div class="instructions">
+            <p><strong>Browser Console Commands:</strong></p>
+            <pre>
+// Test canvas functionality
+fabricCanvas.add(new fabric.Text('Test Text', {left: 100, top: 100}));
+
+// Check for errors
+console.log('Canvas objects:', fabricCanvas.getObjects().length);
+
+// Test file processing
+console.log('Current file:', currentFile);
+
+// Generate code manually
+generateCanvasCode();
+            </pre>
+        </div>
+    </div>
+    
+    <div class="test-container">
+        <h2>📊 Performance Testing</h2>
+        <div class="instructions">
+            <ul>
+                <li>Test with large image files (>5MB)</li>
+                <li>Test with high-resolution PDFs</li>
+                <li>Monitor memory usage during file processing</li>
+                <li>Check load times for different file types</li>
+                <li>Test concurrent file uploads</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="test-container">
+        <h2>🐛 Known Issues & Limitations</h2>
+        <div class="instructions">
+            <ul>
+                <li>Figma file support is limited to basic JSON parsing</li>
+                <li>PDF processing only handles the first page</li>
+                <li>Very large files may cause browser memory issues</li>
+                <li>Copy to clipboard may not work in all browsers</li>
+                <li>Some PDF files with complex layouts may not render perfectly</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

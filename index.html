@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File to Canvas.js Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 File to Canvas.js Converter</h1>
+            <p>Convert Figma, PNG, JPEG, or PDF files into Canvas.js objects</p>
+        </header>
+
+        <main>
+            <!-- File Upload Section -->
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <h3>Upload Your File</h3>
+                    <p>Drag and drop or click to select</p>
+                    <p class="supported-formats">Supported: PNG, JPEG, PDF, Figma exports</p>
+                    <input type="file" id="fileInput" accept=".png,.jpg,.jpeg,.pdf,.fig" hidden>
+                </div>
+                <button id="uploadBtn" class="btn btn-primary">Select File</button>
+            </section>
+
+            <!-- Preview Section -->
+            <section class="preview-section" id="previewSection">
+                <h3>Preview</h3>
+                <div class="canvas-container">
+                    <canvas id="canvas" width="800" height="600"></canvas>
+                </div>
+                <div class="controls">
+                    <button id="downloadCanvas" class="btn btn-secondary">Download Canvas</button>
+                    <button id="resetCanvas" class="btn btn-outline">Reset</button>
+                </div>
+            </section>
+
+            <!-- Code Output Section -->
+            <section class="code-section" id="codeSection">
+                <div class="code-header">
+                    <h3>Canvas.js Code</h3>
+                    <button id="copyCode" class="btn btn-success">📋 Copy Code</button>
+                </div>
+                <textarea id="codeOutput" rows="20" readonly placeholder="Generated Canvas.js code will appear here..."></textarea>
+            </section>
+
+            <!-- File Info Section -->
+            <section class="info-section" id="infoSection">
+                <h3>File Information</h3>
+                <div class="file-info">
+                    <div class="info-item">
+                        <strong>Name:</strong> <span id="fileName"></span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Size:</strong> <span id="fileSize"></span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Type:</strong> <span id="fileType"></span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Dimensions:</strong> <span id="fileDimensions"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 File to Canvas.js Converter</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

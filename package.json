@@ -1,0 +1,42 @@
+{
+  "name": "file-to-canvas-converter",
+  "version": "1.0.0",
+  "description": "A web application that converts Figma, PNG, JPEG, or PDF files into Canvas.js objects",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "canvas.js",
+    "fabric.js",
+    "figma",
+    "pdf",
+    "image-converter",
+    "web-app",
+    "file-converter"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "bugs": {
+    "url": "."
+  },
+  "homepage": ".",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
