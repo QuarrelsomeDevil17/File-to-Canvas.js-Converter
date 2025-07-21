@@ -115,13 +115,6 @@ const image = new fabric.Image(imgElement, {
 canvas.add(image);
 ```
 
-## Browser Compatibility
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
 ## Technical Implementation
 
 ### File Reading
@@ -139,20 +132,6 @@ canvas.add(image);
 - JSON serialization of canvas state
 - Manual object creation code for flexibility
 
-## Customization
-
-### Adding New File Types
-To add support for new file types:
-
-1. Update the file input `accept` attribute
-2. Add a new processor function in `script.js`
-3. Update the file type detection logic
-4. Add appropriate error handling
-
-### Styling Customization
-- Modify `styles.css` for visual changes
-- Responsive design with CSS Grid and Flexbox
-- CSS custom properties for easy theming
 
 ## Limitations
 
@@ -161,33 +140,8 @@ To add support for new file types:
 - Large files may take time to process
 - Browser memory limitations for very large images
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## License
 
 This project is open source and available under the MIT License.
 
-## Support
-
-For questions or issues:
-1. Check the browser console for error messages
-2. Ensure your file is in a supported format
-3. Try with a smaller file size if processing fails
-4. Check browser compatibility
-
-## Future Enhancements
-
-- [ ] Full Figma API integration
-- [ ] Multiple PDF pages support
-- [ ] SVG file support
-- [ ] Advanced canvas editing tools
-- [ ] Export to multiple formats
-- [ ] Cloud storage integration
-- [ ] Batch file processing
-- [ ] Custom canvas templates
