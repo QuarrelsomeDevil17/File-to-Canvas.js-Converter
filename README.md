@@ -24,10 +24,10 @@ A powerful web application that converts various file types (Figma, PNG, JPEG, P
 ## Screenshots
 
 ### Main Interface
-![Main Interface](screenshots/ui1.png)
+![Main Interface](screenshots/ui1.png?v=1)
 
 ### File Processing View
-![File Processing](screenshots/ui2.png)
+![File Processing](screenshots/ui2.png?v=1)
 
 ## How to Use
 
