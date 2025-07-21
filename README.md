@@ -33,7 +33,7 @@ A powerful web application that converts various file types (Figma, PNG, JPEG, P
 
 1. **Upload a File**: 
    - Click the "Select File" button or drag and drop a file onto the upload area
-   - Supported formats: PNG, JPEG, PDF, Figma exports
+   - Supported formats: PNG, JPEG, PDF, Figma export
 
 2. **Preview**: 
    - View your file rendered on the interactive canvas
